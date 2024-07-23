@@ -10,39 +10,29 @@ body {
 }
 
 .container {
-  width: 80%;
-  height: 100vh;
-  margin: auto;
   display: flex;
-  flex-direction: row;
+  height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
 .circle {
-  height: 100px;
-  width: 100px;
+  height: 1.5em;
+  width: 1.5em;
+  background: #000;
+  margin: 0.5em;
   border-radius: 50%;
-  background: var(--color-dark);
-  margin: 20px;
-  animation-name: loading;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  transform: scale(1);
+  animation: pulse infinite alternate 1s;
 }
 
-@keyframes loading {
-  0% {
+@keyframes pulse {
+  from {
     background: var(--color-dark);
-    transform: scale(1);
   }
 
-  50% {
+  to {
     background: var(--color-light);
-    transform: scale(1.1);
-  }
-  100% {
-    background: var(--color-dark);
-    transform: scale(1);
+    height: 1.6em;
+    width: 1.6em;
   }
 }
