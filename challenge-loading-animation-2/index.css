@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  height: 1.5em;
+  width: 1.5em;
+  margin: 0.8em;
+  animation: rotate infinite 2s;
+}
+
+.square1 {
+  background: green;
+}
+.square2 {
+  background: yellow;
+}
+.square3 {
+  background: blue;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  19% {
+    transform: rotate(20deg);
+  }
+  27% {
+    transform: rotate(43deg);
+  }
+  47% {
+    transform: rotate(60deg);
+  }
+  87% {
+    transform: rotate(93deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
