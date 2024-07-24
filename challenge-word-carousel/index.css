@@ -1,0 +1,48 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-word: #5134ff;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1::after {
+  content: " baseball";
+  animation: swap 6s infinite;
+  background: var(--bg-word);
+  padding: 10px;
+  color: #fff;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+@keyframes swap {
+  0% {
+    content: " baseball";
+  }
+
+  25% {
+    content: " blink";
+  }
+
+  50% {
+    content: " bitty";
+  }
+
+  75% {
+    content: " college football";
+  }
+
+  100% {
+    content: " baseball";
+  }
+}
