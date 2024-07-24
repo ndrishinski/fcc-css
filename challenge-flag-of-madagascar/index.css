@@ -1,0 +1,42 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+:root {
+  --white: #ffffff;
+  --red: #fc3e32;
+  --green: #007e39;
+  --flag-height: 350px;
+}
+
+.flag-madagascar {
+  display: flex;
+  margin: 2em auto;
+  height: 350px;
+  width: calc(var(--flag-height) * 3 / 2);
+  background: blue;
+}
+
+.white {
+  background: var(--white);
+  flex: 1;
+}
+
+.red-green-parent {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.red {
+  background: var(--red);
+  flex: 1;
+}
+
+.green {
+  background: var(--green);
+  flex: 1;
+}
