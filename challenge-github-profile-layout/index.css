@@ -1,0 +1,69 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #c9d1d9;
+}
+
+:root {
+  --font-main: "Noto Sans", sans-serif;
+  --main-bg: #000;
+  --profile-bg: #0d1117;
+  --profile-color: #c9d1d9;
+  --profile-img-border: #2e343b;
+  --username-font-color: #8b949e;
+  --username-font-weight: 400;
+  --btn-bg: #21262d;
+  --btn-color: #c9d1d9;
+  --btn-bg-hover: #30363d;
+  --btn-border: #373b43;
+  --btn-border-hover: #8c949e;
+}
+
+.profile-container {
+  min-width: 200px;
+  max-width: 450px;
+  background: var(--profile-bg);
+  height: 80vh;
+  margin: 2em auto;
+  font-family: var(--font-main);
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 2em 3em;
+}
+
+.profile-content img {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+}
+
+.profile-details h3 {
+  font-weight: var(--username-font-weight);
+  color: var(--username-font-color);
+}
+
+.profile-details {
+  width: 100%;
+}
+
+.profile-details button {
+  width: 90%;
+  height: 40px;
+  background: var(--btn-bg);
+  color: var(--btn-color);
+  border: 1px solid var(--btn-border);
+  margin: auto;
+  display: block;
+}
+
+.profile-details button:hover {
+  background: var(--btn-bg-hover);
+  border: 1px solid var(--btn-border-hover);
+}
