@@ -1,0 +1,54 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --card-height: 200px;
+}
+
+.container {
+  margin: 2em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+
+.card {
+  height: var(--card-height);
+  width: calc(var(--card-height) * 2 / 3);
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  flex: 1;
+}
+
+.middle {
+  flex: 1;
+  display: flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.right {
+  flex: 1;
+  transform: rotate(180deg);
+}
+
+.left > div,
+.right > div {
+  font-size: 24px;
+  margin-right: 4px;
+  margin-left: 4px;
+  margin-bottom: -6px;
+}
+
+.middle > div {
+  font-size: 44px;
+  justify-self: center;
+}
