@@ -1,0 +1,47 @@
+body,
+html {
+  margin: 0;
+}
+
+:root {
+  --spinner: #f3f3f3;
+  --spinner-active: purple;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1em solid var(--spinner);
+  animation: spin 2s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    border: 1em solid var(--spinner);
+    border-top: 1em solid var(--spinner-active);
+  }
+
+  25% {
+    border: 1em solid var(--spinner);
+    border-right: 1em solid var(--spinner-active);
+  }
+
+  50% {
+    border: 1em solid var(--spinner);
+    border-bottom: 1em solid var(--spinner-active);
+  }
+
+  100% {
+    border: 1em solid var(--spinner);
+    border-left: 1em solid var(--spinner-active);
+  }
+}
