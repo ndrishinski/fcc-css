@@ -21,27 +21,12 @@ html {
   width: 100px;
   border-radius: 50%;
   border: 1em solid var(--spinner);
-  animation: spin 2s ease infinite;
+  border-top: 1em solid var(--spinner-active);
+  animation: spin 1.5s linear infinite;
 }
 
 @keyframes spin {
-  0% {
-    border: 1em solid var(--spinner);
-    border-top: 1em solid var(--spinner-active);
-  }
-
-  25% {
-    border: 1em solid var(--spinner);
-    border-right: 1em solid var(--spinner-active);
-  }
-
-  50% {
-    border: 1em solid var(--spinner);
-    border-bottom: 1em solid var(--spinner-active);
-  }
-
   100% {
-    border: 1em solid var(--spinner);
-    border-left: 1em solid var(--spinner-active);
+    transform: rotate(360deg);
   }
 }
